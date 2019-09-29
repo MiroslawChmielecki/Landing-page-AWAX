@@ -16,8 +16,7 @@
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange sass/**/*.scss -- npm-run-all build-dev:sass build:autoprefixer",
-    "watch:browser-sync": "browser-sync start --server --files 'css/*.css' '*.html'"
+    "watch:sassprefixer": "onchange sass/**/*.scss -- npm-run-all build-dev:sass build:autoprefixer"
   },
   "repository": {
     "type": "git",
@@ -40,5 +39,6 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^6.1.0",
     "rimraf": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

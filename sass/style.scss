@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+@import "global-styles";
+
+//SECTIONS
+@import "sections/header";
+@import "sections/jumbotron";
+@import "sections/aboutUs";
+@import "sections/services";
+@import "sections/ourProjects";
+@import "sections/ourTeam";
+@import "sections/happyClients";
+@import "sections/logos";
+@import "sections/price";
+@import "sections/premium";
+@import "sections/someFacts";
+@import "sections/socialMedia";
+@import "sections/contactUs";
+@import "sections/map";
+@import "sections/footer";
+
+//COMPONENTS
