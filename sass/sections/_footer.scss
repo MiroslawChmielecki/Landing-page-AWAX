@@ -1,0 +1,96 @@
+.footer {
+  background-color: $black;
+  position: relative;
+  .footer-box {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    @include respond-to("medium") {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .footer-icons-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .footer-icons {
+        display: flex;
+        .footer-icon {
+          width: 35px;
+          height: 35px;
+          background-color: #373737;
+          border-radius: 50%;
+          margin: 2px;
+          transition: $transition;
+          &:hover {
+            background-color: $logo-color;
+          }
+          .fa {
+            width: 14px;
+            height: 14px;
+            color: $white;
+            padding: 10px;
+          }
+        }
+      }
+      .footer-rights {
+        @include respond-to("medium") {
+          margin: 20px auto 0;
+        }
+        .footer-rights-paragraph {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: $white;
+        }
+      }
+    }
+    .footer-text {
+      padding-bottom: 30px;
+      max-width: 500px;
+      @include respond-to("medium") {
+        text-align: center;
+      }
+
+      .footer-paragraph {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 21px;
+        color: #7e7e7e;
+        margin: 0 30px 0 0;
+        @include respond-to("medium") {
+          margin: 0;
+        }
+      }
+    }
+    .footer-form-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #373737;
+      padding: 30px;
+      @include respond-to("medium") {
+        background-color: $black;
+      }
+      .footer-input {
+        border: none;
+        background-color: #373737;
+        border-bottom: 1px solid #aeaeae;
+        margin: 25px 0;
+        text-transform: uppercase;
+        outline: none;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+        color: #aeaeae;
+        @include respond-to("medium") {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}

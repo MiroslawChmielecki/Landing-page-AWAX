@@ -1,0 +1,91 @@
+.top-header {
+  min-height: 100px;
+  width: 100%;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+
+    @include respond-to("large") {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-top {
+      @include respond-to("medium") {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+      .img-logo {
+        width: 50px;
+        height: 50px;
+        margin: 25px 0;
+      }
+    }
+
+    .header-list {
+      margin: 0;
+      display: flex;
+      padding: 0;
+
+      @include respond-to("medium") {
+        display: none;
+      }
+
+      .head-list-element {
+        height: 100%;
+
+        @include respond-to("large") {
+          height: 50px;
+        }
+
+        .head-list-link {
+          color: $white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px;
+          text-transform: uppercase;
+          margin: 0 12px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          @include hover-header;
+
+          @include respond-to("large") {
+            align-items: flex-start;
+            margin: 0 11px;
+          }
+
+          @include respond-to("medium") {
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &.active {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .head-list-element-first {
+        margin-left: 0;
+      }
+
+      .head-list-element-last {
+        margin-right: 0;
+      }
+    }
+    .show {
+      @include respond-to("medium") {
+        display: initial;
+      }
+    }
+  }
+}

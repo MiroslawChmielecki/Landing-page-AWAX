@@ -1,0 +1,80 @@
+.btn-section {
+  width: 194px;
+  height: 45px;
+  background-color: $logo-color;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: $transition;
+  &:hover,
+  &.active {
+    color: $white;
+    background-color: $btn-hover-background;
+  }
+}
+
+.btn-call {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+  background-color: $logo-color;
+  background-image: url("../images/telephone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  right: 70px;
+  bottom: -30px;
+  transition: $transition;
+  &:hover,
+  &.active {
+    background-color: $call-hover-color;
+  }
+}
+
+.btn-table-price {
+  width: 129px;
+  height: 45px;
+  background-color: #373737;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: $transition;
+  &:hover,
+  &.active {
+    background-color: $logo-color;
+  }
+}
+
+.btn-scrollUp {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+  background-color: $logo-color;
+  background-image: url("../images/scrollUp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  left: 70px;
+  top: -40px;
+  transition: $transition;
+  &:hover,
+  &.active {
+    background-color: $btn-hover-background;
+  }
+}

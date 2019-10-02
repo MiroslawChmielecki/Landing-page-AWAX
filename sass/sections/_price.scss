@@ -1,0 +1,58 @@
+.price {
+  background-color: $section-background;
+  .price-box {
+    .price-tables {
+      justify-content: space-around;
+      padding-bottom: 60px;
+
+      @include respond-to("large") {
+        padding: 0 180px 60px;
+      }
+
+      @include respond-to("medium") {
+        padding: 0 70px 60px;
+      }
+
+      @include respond-to("small") {
+        padding: 0 0 60px;
+      }
+      .price-table {
+        width: 255px;
+        height: 343px;
+        background-color: $white;
+        margin: 0 15px 40px;
+        @include flex-center;
+        flex-direction: column;
+
+        .price-table-header {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 21px;
+          text-transform: uppercase;
+          margin: 0 0 20px;
+        }
+        .price-table-price {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 21px;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        .price-table-month {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 25px;
+          text-transform: uppercase;
+          margin-top: 8px;
+        }
+        .price-table-text-lines {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 13px;
+          @include flex-center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

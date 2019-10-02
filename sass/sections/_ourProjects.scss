@@ -1,0 +1,126 @@
+.projects {
+  background-color: $section-background;
+
+  .project-box {
+    display: flex;
+    flex-direction: column;
+
+    .project-menu-list {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 40px;
+      padding: 0;
+
+      @include respond-to("small") {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-list-element {
+        background-color: $project-menu-background;
+        border-left: $border-line;
+        padding: 20px 25px;
+        border-top: $border-line;
+        border-bottom: $border-line;
+        @include respond-to("small") {
+          border: none;
+          background-color: inherit;
+          padding: 10px;
+        }
+
+        .project-list-link {
+          padding: 20px 0 16px;
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: $black;
+
+          &:hover,
+          &.active {
+            color: $logo-color;
+            font-weight: 700;
+            border-bottom: 5px solid $logo-color;
+            transition: $transition;
+            @include respond-to("small") {
+              border: none;
+            }
+          }
+        }
+      }
+
+      .project-list-element-first {
+        padding-left: 40px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        @include respond-to("small") {
+          padding-left: 10px;
+        }
+      }
+
+      .project-list-element-last {
+        border-right: $border-line;
+        padding-right: 40px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        @include respond-to("small") {
+          border: none;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .project-images {
+      display: flex;
+      justify-content: space-around;
+
+      .project-img-box {
+        position: relative;
+        margin: 0 5px 30px;
+
+        .project-image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .project-img-overlay {
+          position: absolute;
+          top: 0;
+          background-color: $black;
+          opacity: 0;
+          transition: $transition;
+          height: 100%;
+          @include flex-center;
+          flex-direction: column;
+
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+
+          .project-img-header {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: $white;
+          }
+
+          .project-img-text {
+            font-size: 12px;
+            font-weight: 400;
+            color: $white;
+            text-align: center;
+            margin: 10px 30px;
+          }
+        }
+      }
+    }
+
+    .btn-section {
+      margin: 0 auto 50px;
+    }
+  }
+}

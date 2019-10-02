@@ -5,11 +5,724 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="sass/style.css" />
     <title>Landing-page-AWAX</title>
   </head>
-  <body></body>
+  <body>
+    <!--HEADER-->
+    <header class="top-header" id="header">
+      <div class="header-box container">
+        <div class="header-top">
+          <img class="img-logo" src="images/LogoAWAX.png" alt="logo-image" />
+          <div class="hamburger-menu" id="hamburger-menu" onclick="changeHamburger(this)">
+            <div class="hamburger-box">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="header-list">
+          <li class="head-list-element head-list-element-first">
+            <a class="head-list-link" href="#jumbotron">home</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#about">about us</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#services">services</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#projects">our projects</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#team">our team</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#clients">happy clients</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#price">price</a>
+          </li>
+          <li class="head-list-element">
+            <a class="head-list-link" href="#facts">some facts</a>
+          </li>
+          <li class="head-list-element head-list-element-last">
+            <a class="head-list-link" href="#contact">contact us</a>
+          </li>
+        </ul>
+        
+      </div>
+    </header>
+
+    <!--JUMBOTRON-->
+    <section class="jumbotron" id="jumbotron">
+      <div class="jumbotron-box container">
+        <h1 class="jumbo-description">
+          <span class="jumbo-first-line">design is about</span>
+          <span class="jumbo-second-line">communication</span>
+        </h1>
+        <p class="jumbo-call">call us: +00 01234 5678</p>
+        <button class="btn-section">get in touch</button>
+        <button class="btn-call"></button>
+        <div class="paginator"></div>
+      </div>
+    </section>
+
+    <!--ABOUT US-->
+    <section class="about" id="about">
+      <div class="container about-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">about us</h2>
+          <p class="header-section-description">who we are?</p>
+        </div>
+        <div class="about-content">
+          <div class="about-description">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <button class="btn-section">learn more</button>
+          </div>
+          <div class="about-video">
+            <img class="about-video-img" src="./images/VideoIMG.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES-->
+    <section class="services" id="services">
+      <div class="container services-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-white">services</h2>
+          <p class="header-section-description">services that we provide</p>
+        </div>
+        <div class="services-content row">
+          <div class="services-element col-3 col-sm-6 col-xs-12">
+            <img class="icon-image" src="images/QualityICON.png" />
+            <h2 class="services-element-header">high quality design</h2>
+            <p class="services-element-text">
+              praesent metus urna, feugiata placerat elementum
+            </p>
+          </div>
+          <div class="services-element col-3 col-sm-6 col-xs-12">
+            <img class="icon-image" src="images/StarICON.png" />
+            <h2 class="services-element-header">modern design</h2>
+            <p class="services-element-text">
+              praesent metus urna, feugiata placerat elementum
+            </p>
+          </div>
+          <div class="services-element col-3 col-sm-6 col-xs-12">
+            <img class="icon-image" src="images/ClockICON.png" />
+            <h2 class="services-element-header">regular updates</h2>
+            <p class="services-element-text">
+              praesent metus urna, feugiata placerat elementum
+            </p>
+          </div>
+          <div
+            class="services-element services-element-last col-3 col-sm-6 col-xs-12"
+          >
+            <img class="icon-image" src="images/SupportICON.png" />
+            <h2 class="services-element-header">fast and free support</h2>
+            <p class="services-element-text">
+              praesent metus urna, feugiata placerat elementum
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--OUR PROJECTS-->
+    <section class="projects" id="projects">
+      <div class="container project-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">our projects</h2>
+          <p class="header-section-description">what we create</p>
+        </div>
+        <ul class="project-menu-list">
+          <li class="project-list-element project-list-element-first">
+            <a class="project-list-link">all</a>
+          </li>
+          <li class="project-list-element">
+            <a class="project-list-link">photos</a>
+          </li>
+          <li class="project-list-element">
+            <a class="project-list-link">branding</a>
+          </li>
+          <li class="project-list-element">
+            <a class="project-list-link">adverts</a>
+          </li>
+          <li class="project-list-element">
+            <a class="project-list-link">development</a>
+          </li>
+          <li class="project-list-element project-list-element-last">
+            <a class="project-list-link">misc</a>
+          </li>
+        </ul>
+        <div class="project-images row">
+          <div class="project-img-box">
+            <img
+              src="./images/Img1.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img2.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img3.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img4.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img5.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img6.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img7.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img8.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img9.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img10.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img11.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+          <div class="project-img-box">
+            <img
+              src="./images/Img12.png"
+              alt="project-image"
+              class="project-image"
+            />
+            <div class="project-img-overlay">
+              <h3 class="project-img-header">about</h3>
+              <p class="project-img-text">
+                Praesant metus urna, feugiat a placerat elementum at leo
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-section">more projects</button>
+      </div>
+    </section>
+
+    <!--OUR TEAM-->
+    <section class="team" id="team">
+      <div class="container team-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-white">our team</h2>
+          <p class="header-section-description">our co-workers</p>
+        </div>
+        <div class="team-workers row">
+          <div class="team-worker-box">
+            <img src="images/Img_team_1.png" class="worker-image" />
+            <h3 class="name-worker">jane doe</h3>
+            <p class="employee-title">Master mind</p>
+            <div class="social-media-icons">
+              <a class="team-media-icon"><i class="fa fa-twitter"></i></a>
+              <a class="team-media-icon"><i class="fa fa-instagram"></i></a>
+              <a class="team-media-icon"><i class="fa fa-linkedin"></i></a>
+              <a class="team-media-icon"><i class="fa fa-facebook"></i></a>
+              <a class="team-media-icon"
+                ><i class="fa fa-youtube-square"></i
+              ></a>
+              <a class="team-media-icon"><i class="fa fa-google-plus"></i></a>
+              <a class="team-media-icon"><i class="fa fa-ellipsis-h"></i></a>
+            </div>
+          </div>
+          <div class="team-worker-box">
+            <img src="images/Img_team_2.png" class="worker-image" />
+            <h3 class="name-worker">mike shiller</h3>
+            <p class="employee-title">Creative head</p>
+            <div class="social-media-icons">
+              <a class="team-media-icon"><i class="fa fa-twitter"></i></a>
+              <a class="team-media-icon"><i class="fa fa-instagram"></i></a>
+              <a class="team-media-icon"><i class="fa fa-linkedin"></i></a>
+              <a class="team-media-icon"><i class="fa fa-facebook"></i></a>
+              <a class="team-media-icon"
+                ><i class="fa fa-youtube-square"></i
+              ></a>
+              <a class="team-media-icon"><i class="fa fa-google-plus"></i></a>
+              <a class="team-media-icon"><i class="fa fa-ellipsis-h"></i></a>
+            </div>
+          </div>
+          <div class="team-worker-box">
+            <img src="images/Img_team_3.png" class="worker-image" />
+            <h3 class="name-worker">anna johns</h3>
+            <p class="employee-title">Technical lead</p>
+            <div class="social-media-icons">
+              <a class="team-media-icon"><i class="fa fa-twitter"></i></a>
+              <a class="team-media-icon"><i class="fa fa-instagram"></i></a>
+              <a class="team-media-icon"><i class="fa fa-linkedin"></i></a>
+              <a class="team-media-icon"><i class="fa fa-facebook"></i></a>
+              <a class="team-media-icon"
+                ><i class="fa fa-youtube-square"></i
+              ></a>
+              <a class="team-media-icon"><i class="fa fa-google-plus"></i></a>
+              <a class="team-media-icon"><i class="fa fa-ellipsis-h"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="paginator"></div>
+      </div>
+    </section>
+
+    <!--HAPPY CLIENTS-->
+    <section class="clients" id="clients">
+      <div class="container clients-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">happy clients</h2>
+          <p class="header-section-description">client reviews</p>
+        </div>
+        <div class="client-content">
+          <img
+            class="client-photo"
+            src="images/Img_client.png"
+            alt="client-image"
+          />
+          <h3 class="client-name">john doe</h3>
+          <p class="client-title">Head of PR Department</p>
+          <img class="quote-image" src="images/quotes.png" alt="quotes-image" />
+          <p class="client-text">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga.
+          </p>
+          <div class="paginator"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--LOGOS-->
+    <section class="logos" id="logos">
+      <div class="container row logos-box">
+        <img class="logo-image" src="images/Logo_1.png" alt="logo-image" />
+        <img class="logo-image" src="images/Logo_2.png" alt="logo-image" />
+        <img class="logo-image" src="images/Logo_3.png" alt="logo-image" />
+        <img class="logo-image" src="images/Logo_4.png" alt="logo-image" />
+        <img class="logo-image" src="images/Logo_5.png" alt="logo-image" />
+        <img class="logo-image" src="images/Logo_6.png" alt="logo-image" />
+      </div>
+    </section>
+
+    <!--PRICE-->
+    <section class="price" id="price">
+      <div class="container price-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">price</h2>
+          <p class="header-section-description">pricing table</p>
+        </div>
+        <div class="price-tables row">
+          <div class="price-table">
+            <h4 class="price-table-header">express</h4>
+            <p class="price-table-price">$ 9.99</p>
+            <p class="price-table-month">/month</p>
+            <p class="price-table-text-lines">
+              <span>Tracking issues</span><span>-</span>
+              <span>Add bugs through email</span><span>-</span>
+              <span>Notifications</span><span>-</span> <span>Time tracking</span
+              ><span>-</span> <span>Custom views</span><span>-</span>
+            </p>
+            <button class="btn-table-price">choose</button>
+          </div>
+          <div class="price-table">
+            <h4 class="price-table-header">standard</h4>
+            <p class="price-table-price">$ 14.99</p>
+            <p class="price-table-month">/month</p>
+            <p class="price-table-text-lines">
+              <span>Tracking issues</span><span>-</span>
+              <span>Add bugs through email</span><span>-</span>
+              <span>Notifications</span><span>-</span> <span>Time tracking</span
+              ><span>-</span> <span>Custom views</span><span>-</span>
+            </p>
+            <button class="btn-table-price">choose</button>
+          </div>
+          <div class="price-table">
+            <h4 class="price-table-header">luxe</h4>
+            <p class="price-table-price">$ 19.99</p>
+            <p class="price-table-month">/month</p>
+            <p class="price-table-text-lines">
+              <span>Tracking issues</span><span>-</span>
+              <span>Add bugs through email</span><span>-</span>
+              <span>Notifications</span><span>-</span> <span>Time tracking</span
+              ><span>-</span> <span>Custom views</span><span>-</span>
+            </p>
+            <button class="btn-table-price">choose</button>
+          </div>
+          <div class="price-table">
+            <h4 class="price-table-header">premium</h4>
+            <p class="price-table-price">$ 24.99</p>
+            <p class="price-table-month">/month</p>
+            <p class="price-table-text-lines">
+              <span>Tracking issues</span><span>-</span>
+              <span>Add bugs through email</span><span>-</span>
+              <span>Notifications</span><span>-</span> <span>Time tracking</span
+              ><span>-</span> <span>Custom views</span><span>-</span>
+            </p>
+            <button class="btn-table-price">choose</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PREMIUM-->
+    <section class="premium" id="premium">
+      <div class="container premium-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">premium</h2>
+          <p class="header-section-description">even more features available</p>
+        </div>
+        <div class="premium-content">
+          <div class="premium-picture">
+            <img class="premium-image" src="images/Img.png" alt="books-image" />
+          </div>
+          <div class="premium-content-text">
+            <div class="premium-text-line">
+              <img class="icon-ok" src="images/icon.png" alt="ok-image" />
+              <div class="premium-text-right">
+                <h3 class="premium-text-right-header">first feature</h3>
+                <p class="premium-text-right-paragraph">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+                <p class="premium-text-right-feature">-feature one</p>
+                <p class="premium-text-right-feature">-feature two</p>
+                <p class="premium-text-right-feature">-feature three</p>
+              </div>
+            </div>
+            <div class="premium-text-line">
+              <img class="icon-ok" src="images/icon.png" alt="ok-image" />
+              <div class="premium-text-right">
+                <h3 class="premium-text-right-header">second feature</h3>
+                <p class="premium-text-right-paragraph">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+              </div>
+            </div>
+            <div class="premium-text-line">
+              <img class="icon-ok" src="images/icon.png" alt="ok-image" />
+              <div class="premium-text-right">
+                <h3 class="premium-text-right-header">third feature</h3>
+                <p class="premium-text-right-paragraph">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paginator paginator-premium"></div>
+        <button class="btn-section btn-premium">get in touch</button>
+      </div>
+    </section>
+
+    <!--SOME FACTS-->
+    <section class="facts" id="facts">
+      <div class="container facts-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-white">some facts</h2>
+          <p class="header-section-description">about our work</p>
+        </div>
+        <div class="facts-content row">
+          <div class="facts-element col-3 col-sm-6 col-xs-12">
+            <h1 class="facts-element-header-price">1000</h1>
+            <div class="facts-semicolon"></div>
+            <h3 class="facts-element-header">design project released</h3>
+            <p class="facts-element-paragraph">
+              Praesent metus urna, feugiat a placerat elementum at leo
+            </p>
+          </div>
+          <div class="facts-element col-3 col-sm-6 col-xs-12">
+            <h1 class="facts-element-header-price">900</h1>
+            <div class="facts-semicolon"></div>
+            <h3 class="facts-element-header">photos</h3>
+            <p class="facts-element-paragraph">
+              Praesent metus urna, feugiat a placerat elementum at leo
+            </p>
+          </div>
+          <div class="facts-element col-3 col-sm-6 col-xs-12">
+            <h1 class="facts-element-header-price">500</h1>
+            <div class="facts-semicolon"></div>
+            <h3 class="facts-element-header">marketing ideas</h3>
+            <p class="facts-element-paragraph">
+              Praesent metus urna, feugiat a placerat elementum at leo
+            </p>
+          </div>
+          <div class="facts-element col-3 col-sm-6 col-xs-12">
+            <h1 class="facts-element-header-price">100</h1>
+            <div class="facts-semicolon"></div>
+            <h3 class="facts-element-header">exhibitions</h3>
+            <p class="facts-element-paragraph">
+              Praesent metus urna, feugiat a placerat elementum at leo
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SOCIAL MEDIA-->
+    <section class="social" id="social">
+      <div class="container social-box">
+        <div class="row social-content">
+          <div class="social-share-box">
+            <img class="share-image" src="images/Share.png" alt="share-image" />
+            <p class="social-share-text">tell about us:</p>
+          </div>
+          <div class="social-icons-box">
+            <a class="social-icon twitter"><i class="fa fa-twitter"></i></a>
+            <p class="social-link-text">152</p>
+            <a class="social-icon linkedin"><i class="fa fa-linkedin"></i></a>
+            <p class="social-link-text">31</p>
+            <a class="social-icon facebook"><i class="fa fa-facebook"></i></a>
+            <p class="social-link-text">22</p>
+            <a class="social-icon google"><i class="fa fa-google-plus"></i></a>
+            <p class="social-link-text">165</p>
+            <a class="social-icon pinterest"
+              ><i class="fa fa-pinterest-p"></i
+            ></a>
+            <p class="social-link-text">152</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT US-->
+    <section class="contact" id="contact">
+      <div class="container contact-box">
+        <div class="header-section">
+          <h2 class="header-section-title header-black">contact us</h2>
+          <p class="header-section-description">
+            our agency located in melbourne, australia
+          </p>
+        </div>
+        <div class="form-box">
+          <form class="contact-form">
+            <input
+              class="contact-input contact-input-name"
+              type="text"
+              placeholder="name"
+            />
+            <input
+              class="contact-input contact-input-email"
+              type="email"
+              placeholder="email"
+            />
+            <input
+              class="contact-input contact-input-subject"
+              type="text"
+              placeholder="subject"
+            />
+            <textarea
+              class="contact-input contact-input-message"
+              placeholder="message"
+            ></textarea>
+          </form>
+        </div>
+        <button class="btn-section btn-contact">send message</button>
+      </div>
+    </section>
+
+    <!--MAP-->
+    <section class="map" id="map">
+      <div class="container address-box">
+        <div class="address-content">
+          <div class="address-line">
+            <a class="address-icon"><i class="fa fa-envelope-o"></i></a>
+            <p class="address-text">
+              po box 16122 collins street west victoria 8007 australia
+            </p>
+          </div>
+          <div class="address-line">
+            <a class="address-icon"><i class="fa fa-map-marker"></i></a>
+            <p class="address-text">
+              121 king street malbourne victoria 3000 australia
+            </p>
+          </div>
+          <div class="address-line">
+            <a class="address-icon"><i class="fa fa-phone-square"></i></a>
+            <p class="address-text">+00 0 1234 5678</p>
+          </div>
+          <div class="address-line">
+            <a class="address-icon"><i class="fa fa-address-book-o"></i></a>
+            <p class="address-text">bukindesign@gmail.com</p>
+          </div>
+          <div class="address-line">
+            <a class="address-icon"><i class="fa fa-globe"></i></a>
+            <p class="address-text">www.envato.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <div class="container row footer-box">
+        <div class="footer-icons-box col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="footer-icons">
+            <a class="footer-icon"><i class="fa fa-twitter"></i></a>
+            <a class="footer-icon"><i class="fa fa-instagram"></i></a>
+            <a class="footer-icon"><i class="fa fa-linkedin"></i></a>
+            <a class="footer-icon"><i class="fa fa-facebook"></i></a>
+            <a class="footer-icon"><i class="fa fa-youtube-square"></i></a>
+            <a class="footer-icon"><i class="fa fa-google-plus"></i></a>
+            <a class="footer-icon"><i class="fa fa-ellipsis-h"></i></a>
+          </div>
+          <div class="footer-rights">
+            <p class="footer-rights-paragraph">awax © 2019</p>
+          </div>
+        </div>
+        <div class="footer-text col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <p class="footer-paragraph">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+            et quas molestias excepturi sint occaecati cupiditate non provident,
+            similique sunt in culpa qui officia deserunt mollitia animi, id est
+            laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+            distinctio. Ut aut reiciendis voluptatibus maiores alias consequatur,
+            aut perferendis doloribus asperiores repellat.
+          </p>
+        </div>
+        <div class="footer-form-box col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <input class="footer-input" type="email"
+          placeholder="email to subscribe"></input>
+          <button class="btn-section">subscribe</button>
+        </div>
+      </div>
+      <a href="#header" class="btn-scrollUp"></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

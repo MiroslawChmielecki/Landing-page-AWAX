@@ -4,6 +4,12 @@
 @import "layout";
 @import "global-styles";
 
+// COMPONENTS
+@import "components/buttons";
+@import "components/header-section";
+@import "components/paginator";
+@import "components/hamburger-menu";
+
 //SECTIONS
 @import "sections/header";
 @import "sections/jumbotron";

@@ -1,0 +1,51 @@
+.services {
+  background-color: $black;
+  padding-bottom: 50px;
+
+  .services-box {
+    .services-content {
+      .services-element {
+        border-left: 1px solid $border-line-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 45px;
+
+        @include respond-to("small") {
+          border: none;
+        }
+
+        .icon-image {
+          width: 59px;
+          height: 58px;
+          margin: 20px 0;
+        }
+
+        .services-element-header {
+          color: $white;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 18px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .services-element-text {
+          font-size: 12px;
+          font-weight: 300;
+          color: $smaller-header-color;
+          text-align: center;
+          margin-top: 0;
+        }
+      }
+
+      .services-element-last {
+        border-right: 1px solid $border-line-color;
+
+        @include respond-to("small") {
+          border: none;
+        }
+      }
+    }
+  }
+}

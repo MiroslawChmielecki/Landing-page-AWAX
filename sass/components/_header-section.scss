@@ -1,0 +1,28 @@
+.header-section {
+  margin-bottom: 50px;
+  @include flex-center;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  .header-section-title {
+    font-size: 30px;
+    margin: 60px 0 10px;
+  }
+
+  .header-black {
+    color: $black;
+  }
+
+  .header-white {
+    color: $white;
+  }
+
+  .header-section-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $smaller-header-color;
+    margin: 0;
+    text-align: center;
+  }
+}

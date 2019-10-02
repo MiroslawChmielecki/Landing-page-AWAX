@@ -1,0 +1,15 @@
+@mixin hover-header {
+  &:hover,
+  &.active {
+    color: $logo-color;
+    cursor: pointer;
+    border-bottom: 5px solid $logo-color;
+    transition: $transition;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

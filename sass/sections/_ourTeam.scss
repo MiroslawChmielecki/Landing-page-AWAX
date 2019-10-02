@@ -1,0 +1,61 @@
+.team {
+  position: relative;
+  background-image: url(../images/team_back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  .team-box {
+    display: flex;
+    flex-direction: column;
+
+    .team-workers {
+      justify-content: space-around;
+      margin-bottom: 110px;
+
+      .team-worker-box {
+        width: 350px;
+        height: 432px;
+        background-color: $white;
+        @include flex-center;
+        flex-direction: column;
+        margin: 0 15px 40px;
+
+        .name-worker {
+          font-size: 21px;
+          font-weight: 500;
+          line-height: 21px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .employee-title {
+          font-size: 14px;
+          font-weight: 400;
+          margin-top: 0;
+        }
+        .social-media-icons {
+          margin-top: 26px;
+          display: flex;
+
+          .team-media-icon {
+            width: 35px;
+            height: 35px;
+            background-color: #bebebe;
+            border-radius: 50%;
+            margin: 2px;
+            transition: $transition;
+            &:hover {
+              background-color: $logo-color;
+            }
+            .fa {
+              width: 14px;
+              height: 14px;
+              color: $white;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

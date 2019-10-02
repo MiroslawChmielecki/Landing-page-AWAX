@@ -1,0 +1,93 @@
+.social {
+  .social-box {
+    .social-content {
+      @include flex-center;
+      padding: 20px 0;
+
+      @include respond-to("small") {
+        display: flex;
+        flex-direction: column;
+      }
+      .social-share-box {
+        display: flex;
+        align-items: center;
+        @include respond-to("small") {
+          margin-bottom: 15px;
+        }
+        .share-image {
+          width: 23px;
+          height: 25px;
+        }
+        .social-share-text {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: #aeaeae;
+          margin: 0 60px 0 15px;
+          @include respond-to("small") {
+            margin-right: 20px;
+          }
+          @include respond-to("small") {
+            margin-right: 0;
+          }
+        }
+      }
+      .social-icons-box {
+        display: flex;
+        align-items: center;
+
+        .social-icon {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin: 2px;
+          transition: $transition;
+          &:hover {
+            cursor: pointer;
+          }
+          .fa {
+            width: 14px;
+            height: 14px;
+            color: $white;
+            padding: 10px;
+          }
+        }
+        .twitter {
+          background-color: #34c5f0;
+        }
+        .linkedin {
+          background-color: #127cb4;
+        }
+        .facebook {
+          background-color: #336297;
+        }
+        .google {
+          background-color: #e74237;
+        }
+        .pinterest {
+          background-color: #b71c29;
+        }
+        .social-link-text {
+          font-size: 10px;
+          font-weight: 700;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #aeaeae;
+          margin: 10px 35px 10px 5px;
+          @include respond-to("small") {
+            margin-right: 10px;
+          }
+          @include respond-to("extra-small") {
+            margin: 10px 5px 10px 3px;
+          }
+        }
+        .social-link-text:last-of-type {
+          @include respond-to("small") {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
