@@ -244,7 +244,7 @@ button:hover { cursor: pointer; }
 
 .btn-section:hover, .btn-section.active { color: #ffffff; background-color: #cc6633; }
 
-.btn-call { position: absolute; width: 65px; height: 65px; box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24); background-color: #b88b58; background-image: url("../images/telephone.png"); background-position: center; background-repeat: no-repeat; border-radius: 50%; border: none; outline: none; right: 70px; bottom: -30px; transition: all 0.3s ease-in-out; }
+.btn-call { position: absolute; width: 65px; height: 65px; box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24); background-color: #b88b58; background-image: url("../images/Telephone.png"); background-position: center; background-repeat: no-repeat; border-radius: 50%; border: none; outline: none; right: 70px; bottom: -30px; transition: all 0.3s ease-in-out; }
 
 .btn-call:hover, .btn-call.active { background-color: #33cc00; }
 
@@ -252,7 +252,7 @@ button:hover { cursor: pointer; }
 
 .btn-table-price:hover, .btn-table-price.active { background-color: #b88b58; }
 
-.btn-scrollUp { position: absolute; width: 65px; height: 65px; box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24); background-color: #b88b58; background-image: url("../images/scrollUp.png"); background-position: center; background-repeat: no-repeat; border-radius: 50%; border: none; outline: none; left: 70px; top: -40px; transition: all 0.3s ease-in-out; }
+.btn-scrollUp { position: absolute; width: 65px; height: 65px; box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24); background-color: #b88b58; background-image: url("../images/ScrollUp.png"); background-position: center; background-repeat: no-repeat; border-radius: 50%; border: none; outline: none; left: 70px; top: -40px; transition: all 0.3s ease-in-out; }
 
 .btn-scrollUp:hover, .btn-scrollUp.active { background-color: #cc6633; }
 
@@ -274,7 +274,7 @@ button:hover { cursor: pointer; }
 
 .hamburger-menu .hamburger-box { cursor: pointer; }
 
-.bar1, .bar2, .bar3 { width: 35px; height: 5px; background-color: #ffffff; margin: 6px 0; transition: 0.1 ease-in-out; }
+.bar1, .bar2, .bar3 { width: 35px; height: 5px; background-color: #ffffff; margin: 6px 0; transition: all 0.1s ease-in-out; }
 
 .change .bar1 { transform: rotate(-45deg) translate(-9px, 6px); }
 
