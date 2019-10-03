@@ -226,7 +226,7 @@ template { display: none; }
 
 .col-offset-12 { margin-left: 100%; }
 
-* { box-sizing: border-box; outline: none; }
+* { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
 
 body { margin: 0 auto; font-family: "Montserrat", sans-serif; }
 
