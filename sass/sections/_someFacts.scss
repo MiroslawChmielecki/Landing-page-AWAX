@@ -1,11 +1,14 @@
 .facts {
   background-color: $black;
+
   .facts-box {
     .facts-content {
       margin-top: 5px;
+
       @include respond-to("small") {
         padding-bottom: 22px;
       }
+
       .facts-element {
         display: flex;
         align-items: center;
@@ -16,6 +19,7 @@
         @include respond-to("small") {
           margin-bottom: 18px;
         }
+
         .facts-element-header-price {
           font-size: 48px;
           font-weight: 700;
@@ -23,11 +27,13 @@
           color: $logo-color;
           margin: 0 0 15px;
         }
+
         .facts-semicolon {
           background-color: grey;
           width: 20px;
           height: 3px;
         }
+
         .facts-element-header {
           font-size: 18px;
           font-weight: 400;
@@ -36,6 +42,7 @@
           margin: 10px 0;
           text-align: center;
         }
+
         .facts-element-paragraph {
           font-size: 12px;
           font-weight: 300;

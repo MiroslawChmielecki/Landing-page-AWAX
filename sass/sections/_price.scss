@@ -1,5 +1,6 @@
 .price {
   background-color: $section-background;
+
   .price-box {
     .price-tables {
       justify-content: space-around;
@@ -16,6 +17,7 @@
       @include respond-to("small") {
         padding: 0 0 60px;
       }
+
       .price-table {
         width: 255px;
         height: 343px;
@@ -31,6 +33,7 @@
           text-transform: uppercase;
           margin: 0 0 20px;
         }
+
         .price-table-price {
           font-size: 30px;
           font-weight: 700;
@@ -38,6 +41,7 @@
           text-transform: uppercase;
           margin: 0;
         }
+
         .price-table-month {
           font-size: 10px;
           font-weight: 400;
@@ -45,6 +49,7 @@
           text-transform: uppercase;
           margin-top: 8px;
         }
+
         .price-table-text-lines {
           font-size: 14px;
           font-weight: 500;

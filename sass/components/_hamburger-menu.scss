@@ -7,10 +7,12 @@
   @include respond-to("medium") {
     display: initial;
   }
+
   .hamburger-box {
     cursor: pointer;
   }
 }
+
 .bar1,
 .bar2,
 .bar3 {
@@ -20,6 +22,7 @@
   margin: 6px 0;
   transition: all 0.1s ease-in-out;
 }
+
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);

@@ -1,13 +1,16 @@
 .contact {
   background-color: $section-background;
+
   .contact-box {
     display: flex;
     align-items: center;
     flex-direction: column;
+
     .form-box {
       display: flex;
       justify-content: center;
       max-width: 550px;
+
       .contact-form {
         padding-top: 40px;
 
@@ -21,12 +24,14 @@
           text-transform: uppercase;
           outline: none;
         }
+
         .contact-input-name {
           margin-right: 45px;
           @include respond-to("small") {
             width: 100%;
           }
         }
+
         .contact-input-email {
           @include respond-to("small") {
             width: 100%;
@@ -36,12 +41,14 @@
         .contact-input-subject {
           width: 100%;
         }
+
         .contact-input-message {
           width: 100%;
           margin-top: 60px;
         }
       }
     }
+
     .btn-contact {
       margin: 50px auto 70px;
     }

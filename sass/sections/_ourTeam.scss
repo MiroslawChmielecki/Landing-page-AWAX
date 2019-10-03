@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   min-height: 700px;
+
   .team-box {
     display: flex;
     flex-direction: column;
@@ -28,11 +29,13 @@
           text-transform: uppercase;
           margin-bottom: 10px;
         }
+
         .employee-title {
           font-size: 14px;
           font-weight: 400;
           margin-top: 0;
         }
+
         .social-media-icons {
           margin-top: 26px;
           display: flex;
@@ -44,9 +47,11 @@
             border-radius: 50%;
             margin: 2px;
             transition: $transition;
+
             &:hover {
               background-color: $logo-color;
             }
+
             .fa {
               width: 14px;
               height: 14px;
