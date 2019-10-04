@@ -585,7 +585,7 @@ button:hover { cursor: pointer; }
 
 .contact .contact-box .btn-contact { margin: 50px auto 70px; }
 
-.map { background-image: url("../images/map.png"); background-repeat: no-repeat; background-position: center; background-size: cover; min-height: 420px; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.map { background-image: url("../images/Map.png"); background-repeat: no-repeat; background-position: center; background-size: cover; min-height: 420px; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
 
 @media (max-width: 767.98px) { .map { -ms-flex-pack: center; justify-content: center; } }
 
